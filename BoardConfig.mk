@@ -18,7 +18,7 @@ BOARD_MALLOC_ALIGNMENT := 16
 
 
 # Atom optimizations to improve memory benchmarks enable disable houdini
--include $(LOCAL_PATH)/OptAtom.mk
+-include device/asus/a400cg/OptAtom.mk
 
 TARGET_BOARD_PLATFORM := clovertrail
 TARGET_BOOTLOADER_BOARD_NAME := clovertrail
@@ -29,8 +29,8 @@ TARGET_NO_RADIOIMAGE := true
 
 
 # Use boot tools to make Intel-formatted images
-DEVICE_BASE_BOOT_IMAGE := $(LOCAL_PATH)/blobs/boot.img
-DEVICE_BASE_RECOVERY_IMAGE := $(LOCAL_PATH)/blobs/recovery.img
+DEVICE_BASE_BOOT_IMAGE := device/asus/a400cg/blobs/boot.img
+DEVICE_BASE_RECOVERY_IMAGE := device/asus/a400cg/blobs/recovery.img
 
 
 # Kernel config (reference only)
@@ -134,7 +134,7 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH
 
 # HWComposer
-BOARD_USES_HWCOMPOSER := true
+BOARD_USES_HWCOMAPOSER := true
 
 # Enable WEBGL in WebKit
 ENABLE_WEBGL := true
@@ -152,7 +152,7 @@ BOARD_SEPOLICY_UNION += \
     property_contexts \
     file.te \
     genfs_contexts \
-    device.te \
+    device.te \A
     vold.te \
     ecryptfs.te \
     surfaceflinger.te \
