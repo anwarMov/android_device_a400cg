@@ -152,7 +152,7 @@ BOARD_SEPOLICY_UNION += \
     property_contexts \
     file.te \
     genfs_contexts \
-    device.te \A
+    device.te \
     vold.te \
     ecryptfs.te \
     surfaceflinger.te \
